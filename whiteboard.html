@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<link rel="stylesheet" href="css/boxicons.css">
+<link rel="stylesheet" href="css/boxicons.min.css">
+<link rel="stylesheet" href="css/transformations.css">
+<link rel="stylesheet" href="editore.css">
+<link rel="stylesheet" href="css/voice.css">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/browser-scss@1.0.3/dist/browser-scss.min.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+
+<div class="container">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <nav class="sidebar">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgjA6FdqLFps5zaTKQjQJaEThc8nqqk-qq8BTrxjoc1a2DWIJ2wb-eTf1R4hYRwC4UDqdR2kOish2vKcemBjYQEh0waLfZ4wcteJvy0TISrdbPWZm8udx730Ow7nj-oU_-7ZJGQSWWU8iAa_FG3BZ02BK1gpXYzmxj-s42fk4D0WrooBR6bypV9ImrSOg=s800" alt="">
+        </span>
+
+        <div class="text logo-text">
+          <span class="name">Codinglab</span>
+          <span class="profession">Web developer</span>
+        </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+
+        <li class="search-box">
+          <i class='bx bx-search icon'></i>
+          <input type="text" placeholder="Search...">
+        </li>
+
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="voice.html">
+              <i class='bx bx-home-circle icon'></i>
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="voice.html">
+              <i class='bx bx-user-voice icon' ></i>
+              <span class="text nav-text">Voice</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="index.html">
+              <i class='bx bxl-youtube icon'></i>
+              <span class="text nav-text">Youtube</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="photo.html">
+              <i class='bx bx-photo-album icon' ></i>
+              <span class="text nav-text">Photo</span>
+            </a>
+          </li>
+
+          <!-- <li class="nav-link">
+            <a href="keyword.html">
+              <i class='bx bxs-bar-chart-alt-2 icon'></i>
+              <span class="text nav-text">Analytics</span>
+            </a>
+          </li> -->
+
+          <li class="nav-link">
+            <a href="translate.html">
+              <i class='bx bx-conversation icon'></i>
+              <span class="text nav-text">Translate</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="texteditor.html">
+              <i class='bx bx-message-square-edit icon'></i>
+              <span class="text nav-text">Text Editor</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="converter.html">
+              <i class='bx bxs-analyse icon'></i>
+              <span class="text nav-text">Converter</span>
+            </a>
+          </li>
+
+          
+          <li class="nav-link">
+            <a href="whiteboard.html">
+              <i class='bx bx-chalkboard icon'></i>
+              <span class="text nav-text">Whiteboard</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+  
+
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <section class="home">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+       
+    <style>
+        body {
+            background-image: url('https://i.postimg.cc/nV90c3zv/background-53876-32170.png');
+        }
+
+        [toolbar] {
+            position: absolute;
+            left: 10px;
+            top: 50px;
+            width: 50px;
+            background: #f0f0f0;
+            padding: 3px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .dialog button {
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            margin: 5px 0;
+            border: 3px solid transparent;
+        }
+
+        .dialog button:hover,
+        .dialog button.selected {
+            background: #ccc;
+        }
+
+        .dialog button.selected {
+            border: 2px solid #56c376;
+        }
+
+        .swatch {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .dialog {
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+
+        }
+
+        zwibbler,
+        [z-canvas] {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .logo {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .share {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            border: 0;
+            background: #56c376;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .share:hover {
+            background: #4cac6a;
+        }
+    </style>
+
+    <script src="whiteboard.js"></script>
+    <script>
+        Zwibbler.controller("MyController", function (ctx) {
+            ctx.colours = [
+                "#000",
+                "#f7412d",
+                "#47b04b",
+                "#1194f6",
+                "#ffc200",
+                "#9d1bb2",
+                "#ec1561",
+                "#7a5547"
+            ];
+
+    
+            var session = "";
+            ctx.share = function () {
+                if (session === "") {
+                    session = ctx.createSharedSession();
+                    ctx.setConfig("broadcastMouse", true);
+                    window.location.hash = "#session=" + session;
+                }
+                let url = window.location.href;
+                prompt("Share this URL", url);
+            };
+
+            var re = /session=([A-Za-z0-9]+)/;
+            var m = re.exec(window.location.hash);
+            if (m) {
+                session = m[1];
+                console.log("Joining session: %s", m[1]);
+                ctx.joinSharedSession(m[1], true);
+                ctx.setConfig("broadcastMouse", true);
+            }
+
+            console.log("Controller called");
+            ctx.useFreehandTool();
+        });
+    </script>
+    <script>const body = document.querySelector("body"),
+      sidebar = body.querySelector("nav"),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+    
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
+    
+    searchBtn.addEventListener("click", () => {
+      sidebar.classList.remove("close");
+    });
+    
+    modeSwitch.addEventListener("click", () => {
+      body.classList.toggle("dark");
+    
+      if (body.classList.contains("dark")) {
+        modeText.innerText = "Light mode";
+      } else {
+        modeText.innerText = "Dark mode";
+      }
+    });
+    
+    
+    </script>
+    <zwibbler z-controller="MyController" showToolbar="false" defaultBrushWidth="4">
+        <div z-canvas></div>
+        <button class="share" z-click="share()"><i class="fas fa-user-alt"></i> Draw with others </button>
+        <div toolbar class="dialog zwibbler-passthrough">
+            <button z-click="usePickTool()" z-selected="getCurrentTool()==='pick'"><i
+                    class="fas fa-mouse-pointer"></i></button>
+            <button z-click="undo()"><i class="fas fa-undo"></i></button>
+            <button z-show-popup="palette"><i class="fas fa-palette"></i></button>
+            <button z-click="useFreehandTool()" z-selected="getCurrentTool()==='brush'"><i
+                    class="fas fa-pencil-alt"></i></button>
+            <button z-show-popup="shapes" z-selected="getCurrentTool()==='rectangle' || getCurrentTool()==='circle'"><i
+                    class="fas fa-shapes"></i></button>
+            <button z-click="deleteSelection()"><i class="fas fa-trash-alt"></i></button>
+
+        </div>
+        <div z-popup="palette" class="dialog" z-click-dismiss z-show-position="tr tl">
+            <div class="swatch" z-for="colour in colours" z-click="setColour(colour, true)"
+                z-on:contextmenu="setColour(colour, false)" z-style="{backgroundColor:colour}">
+            </div>
+        </div>
+        <div z-popup="shapes" class="dialog" z-click-dismiss>
+            <button z-click="useRectangleTool({fillStyle:'transparent'})"><i class="far fa-square"></i></button>
+            <button z-click="useRectangleTool()"><i class="fas fa-square"></i></button>
+            <button z-click="useCircleTool({fillStyle:'transparent'})"><i class="far fa-circle"></i></button>
+            <button z-click="useCircleTool()"><i class="fas fa-circle"></i></button>
+        </div>
+    </zwibbler>
+</div>
+</section>  
+</div>
+</body>
+
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<link rel="stylesheet" href="css/boxicons.css">
+<link rel="stylesheet" href="css/boxicons.min.css">
+<link rel="stylesheet" href="css/transformations.css">
+<link rel="stylesheet" href="editore.css">
+<link rel="stylesheet" href="css/voice.css">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/browser-scss@1.0.3/dist/browser-scss.min.js"></script>
+
+
+<div class="container">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <nav class="sidebar">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgjA6FdqLFps5zaTKQjQJaEThc8nqqk-qq8BTrxjoc1a2DWIJ2wb-eTf1R4hYRwC4UDqdR2kOish2vKcemBjYQEh0waLfZ4wcteJvy0TISrdbPWZm8udx730Ow7nj-oU_-7ZJGQSWWU8iAa_FG3BZ02BK1gpXYzmxj-s42fk4D0WrooBR6bypV9ImrSOg=s800" alt="">
+        </span>
+
+        <div class="text logo-text">
+          <span class="name">Worktools</span>
+          <span class="profession">By Nazmul Hossain</span>
+        </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+
+        <li class="search-box">
+          <i class='bx bx-search icon'></i>
+          <input type="text" placeholder="Search...">
+        </li>
+
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="voice.html">
+              <i class='bx bx-home-circle icon'></i>
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="voice.html">
+              <i class='bx bx-user-voice icon' ></i>
+              <span class="text nav-text">Voice</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="index.html">
+              <i class='bx bxl-youtube icon'></i>
+              <span class="text nav-text">Youtube</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="photo.html">
+              <i class='bx bx-photo-album icon' ></i>
+              <span class="text nav-text">Photo</span>
+            </a>
+          </li>
+
+          <!-- <li class="nav-link">
+            <a href="keyword.html">
+              <i class='bx bxs-bar-chart-alt-2 icon'></i>
+              <span class="text nav-text">Analytics</span>
+            </a>
+          </li> -->
+
+          <li class="nav-link">
+            <a href="translate.html">
+              <i class='bx bx-conversation icon'></i>
+              <span class="text nav-text">Translate</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="texteditor.html">
+              <i class='bx bx-message-square-edit icon'></i>
+              <span class="text nav-text">Text Editor</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="converter.html">
+              <i class='bx bxs-analyse icon'></i>
+              <span class="text nav-text">Converter</span>
+            </a>
+          </li>
+
+          
+          <li class="nav-link">
+            <a href="whiteboard.html">
+              <i class='bx bx-chalkboard icon'></i>
+              <span class="text nav-text">Whiteboard</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <section class="home">
+
+<style>   body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    #converterForm {
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    input[type="number"] {
+      width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+}
+
+    button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    
+    #result {
+    width: 247px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3bf30f;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.input-container {
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+         
+    </style>
+<body>
+ 
+    <form id="converterForm">
+        <label for="numberInput">Enter a number:</label>
+        <input type="number" id="numberInput" placeholder="Enter numerals">
+        <button type="submit">Convert</button>
+    </form>
+    <p id="result"></p>
+
+    <div class="input-container">
+      <h2>Bengali to English</h2>
+      <input type="text" id="bengaliInput" placeholder="Enter Bengali numerals">
+      <button onclick="convertAndDisplay()">Convert</button>
+      <p id="result"></p>
+  </div>
+    <script>
+    // Define the Bengali words array
+    const banglawords = [
+  'এক',
+   'দুই',
+   'তিন',
+   'চার',
+   'পাঁচ',
+   'ছয়',
+   'সাত',
+   'আট',
+   'নয়',
+   'দশ',
+   'এগারো',
+   'বারো',
+   'তেরো',
+   'চুদ্দ',
+   'পনেরো',
+   'ষোল',
+   'সতেরো',
+   'আঠারো',
+   'ঊনিশ',
+   'বিশ',
+   'একুশ',
+   'বাইশ',
+   'তেইশ',
+   'চব্বিশ',
+   'পঁচিশ ',
+   'ছাব্বিশ ',
+   'সাতাশ ',
+   'আটাশ',
+   'ঊনত্রিশ',
+   'ত্রিশ',
+   'একত্রিশ',
+   'বত্রিশ',
+   'তেত্রিশ',
+   'চুরাশি',
+   'পঁয়ত্রিশ',
+   'ছত্রিশ',
+   'সাঁইত্রিশ',
+   'আটত্রিশ',
+   'ঊনচল্লিশ',
+   'চল্লিশ',
+   'একচল্লিশ',
+   'বিয়াল্লিশ',
+   'তেতাল্লিশ',
+   'চুয়াল্লিশ',
+   'পঁয়তাল্লিশ',
+   'ছেচল্লিশ',
+   'সাতচল্লিশ',
+   'আটচল্লিশ',
+   'ঊনপঞ্চাশ',
+   'পঞ্চাশ',
+   'একান্ন',
+   'বায়ান্ন',
+   'তিপ্পান্ন',
+   'চুয়ান্ন',
+   'পঞ্চান্ন',
+   'ছাপ্পান্ন',
+   'সাতান্ন',
+   'আটান্ন',
+   'ঊনষাট',
+   'ষাট',
+   'একষট্টি',
+   'বাষট্টি',
+   'তেষট্টি',
+   'চৌষট্টি',
+   'পঁয়ষট্টি',
+   'ছেষট্টি',
+   'সাতষট্টি',
+   'আটষট্টি',
+   'ঊনসত্তর',
+   'সত্তর',
+   'একাত্তর',
+   'বাহাত্তর',
+   'তিয়াত্তর',
+   'চুয়াত্তর',
+   'পঁচাত্তর',
+   'ছিয়াত্তর',
+   'সাতাত্তর',
+   'আটাত্তর',
+   'ঊনাশি',
+   'আশি',
+   'একাশি',
+   'বিরাশি',
+   'তিরাশি',
+   'চুরাশি',
+   'পঁচাশি',
+   'ছিয়াশি',
+   'সাতাশি',
+   'আটাশি',
+   'ঊননব্বই',
+   'নব্বই',
+   'একানব্বই',
+   'বিরানব্বই',
+   'তিরানব্বই',
+   'চুরানব্বই',
+   'পঁচানব্বই',
+   'ছিয়ানব্বই',
+   'সাতানব্বই',
+   'আটানব্বই',
+   'নিরানব্বই',
+   'একশত',
+   'হাজার',
+   'দশহাজার',
+   'একলক্ষ'
+];
+
+
+
+// Get the form element
+    const converterForm = document.getElementById('converterForm');
+
+    // Add an event listener for form submission
+    converterForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get the user input value
+        const numberInput = document.getElementById('numberInput').value;
+
+        // Check if the input is a valid number
+        if (!isNaN(numberInput) && numberInput >= 1) {
+            if (numberInput <= 100) {
+                const convertedWord = banglawords[numberInput - 1]; // Arrays are zero-based
+                document.getElementById('result').textContent = `${numberInput} = ${convertedWord}`;
+            } else {
+                const parts = [];
+                let remainingNumber = numberInput;
+
+                const thousands = Math.floor(remainingNumber / 1000);
+                if (thousands > 0) {
+                    parts.push(banglawords[thousands - 1] + 'হাজার');
+                    remainingNumber %= 1000;
+                }
+
+                const tenthousands = Math.floor(remainingNumber / 10000);
+                if (tenthousands > 0) { // Corrected from `if (thousands > 0)`
+                    parts.push(banglawords[tenthousands - 1] + 'দশহাজার');
+                    remainingNumber %= 10000;
+                }
+
+                const hundredthousands = Math.floor(remainingNumber / 1000000);
+                if (hundredthousands > 0) {
+                    parts.push(banglawords[hundredthousands - 1] + 'একলক্ষ');
+                    remainingNumber %= 100000;
+                }
+
+                const hundreds = Math.floor(remainingNumber / 100);
+                if (hundreds > 0) {
+                    parts.push(banglawords[hundreds - 1] + 'শত');
+                    remainingNumber %= 100;
+                }
+
+                if (remainingNumber > 0) {
+                    parts.push(banglawords[remainingNumber - 1]);
+                }
+
+                const resultText = parts.join(' ');
+                document.getElementById('result').textContent = `${numberInput} = ${resultText}`;
+            }
+        } else {
+            document.getElementById('result').textContent = 'Please enter a valid number greater than or equal to 1.';
+        }
+    });
+    </script>
+    <script>
+      // Define a function to convert Bengali numerals to English numerals
+      function convertBengaliToEnglish(inputStr) {
+        const bengaliToEnglish = {
+          '০': '0',
+          '১': '1',
+          '২': '2',
+          '৩': '3',
+          '৪': '4',
+          '৫': '5',
+          '৬': '6',
+          '৭': '7',
+          '৮': '8',
+          '৯': '9',
+        };
+
+        let englishStr = '';
+
+        for (let i = 0; i < inputStr.length; i++) {
+          const char = inputStr.charAt(i);
+          if (bengaliToEnglish[char]) {
+            englishStr += bengaliToEnglish[char];
+          } else {
+            englishStr += char;
+          }
+        }
+
+        return englishStr;
+      }
+
+      function convertAndDisplay() {
+          const bengaliInput = document.getElementById('bengaliInput').value;
+          const resultElement = document.getElementById('result');
+          
+          // Call the conversion function
+          const englishNumber = convertBengaliToEnglish(bengaliInput);
+          
+          // Display the result
+          resultElement.textContent = `English Number: ${englishNumber}`;
+      }
+  </script>
+  <script>const body = document.querySelector("body"),
+    sidebar = body.querySelector("nav"),
+    toggle = body.querySelector(".toggle"),
+    searchBtn = body.querySelector(".search-box"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text");
+  
+  toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+  });
+  
+  searchBtn.addEventListener("click", () => {
+    sidebar.classList.remove("close");
+  });
+  
+  modeSwitch.addEventListener("click", () => {
+    body.classList.toggle("dark");
+  
+    if (body.classList.contains("dark")) {
+      modeText.innerText = "Light mode";
+    } else {
+      modeText.innerText = "Dark mode";
+    }
+  });
+  
+  
+  </script>
+</body>
+</html>

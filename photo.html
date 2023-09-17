@@ -1,0 +1,229 @@
+<link rel="stylesheet" href="css/boxicons.css">
+<link rel="stylesheet" href="css/boxicons.min.css">
+<link rel="stylesheet" href="css/transformations.css">
+<link rel="stylesheet" href="editore.css">
+<link rel="stylesheet" href="css/photo.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/browser-scss@1.0.3/dist/browser-scss.min.js"></script>
+
+
+<div class="container">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    
+  <link rel="stylesheet" href="css/boxicons.css">
+  <link rel="stylesheet" href="css/boxicons.min.css">
+  <link rel="stylesheet" href="css/transformations.css">
+  <link rel="stylesheet" href="editore.css">
+  <link rel="stylesheet" href="css/voice.css">
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/browser-scss@1.0.3/dist/browser-scss.min.js"></script>
+  
+  
+  <div class="container">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+    <nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgjA6FdqLFps5zaTKQjQJaEThc8nqqk-qq8BTrxjoc1a2DWIJ2wb-eTf1R4hYRwC4UDqdR2kOish2vKcemBjYQEh0waLfZ4wcteJvy0TISrdbPWZm8udx730Ow7nj-oU_-7ZJGQSWWU8iAa_FG3BZ02BK1gpXYzmxj-s42fk4D0WrooBR6bypV9ImrSOg=s800" alt="">
+          </span>
+  
+          <div class="text logo-text">
+            <span class="name">Codinglab</span>
+            <span class="profession">Web developer</span>
+          </div>
+        </div>
+  
+        <i class='bx bx-chevron-right toggle'></i>
+      </header>
+  
+      <div class="menu-bar">
+        <div class="menu">
+  
+          <li class="search-box">
+            <i class='bx bx-search icon'></i>
+            <input type="text" placeholder="Search...">
+          </li>
+  
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="voice.html">
+                <i class='bx bx-home-circle icon'></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="voice.html">
+                <i class='bx bx-user-voice icon' ></i>
+                <span class="text nav-text">Voice</span>
+              </a>
+            </li>
+  
+            <li class="nav-link">
+              <a href="index.html">
+                <i class='bx bxl-youtube icon'></i>
+                <span class="text nav-text">Youtube</span>
+              </a>
+            </li>
+  
+            <li class="nav-link">
+              <a href="photo.html">
+                <i class='bx bx-photo-album icon' ></i>
+                <span class="text nav-text">Photo</span>
+              </a>
+            </li>
+  
+            <!-- <li class="nav-link">
+              <a href="keyword.html">
+                <i class='bx bxs-bar-chart-alt-2 icon'></i>
+                <span class="text nav-text">Analytics</span>
+              </a>
+            </li> -->
+  
+            <li class="nav-link">
+              <a href="translate.html">
+                <i class='bx bx-conversation icon'></i>
+                <span class="text nav-text">Translate</span>
+              </a>
+            </li>
+  
+            <li class="nav-link">
+              <a href="texteditor.html">
+                <i class='bx bx-message-square-edit icon'></i>
+                <span class="text nav-text">Text Editor</span>
+              </a>
+            </li>
+  
+            <li class="nav-link">
+              <a href="converter.html">
+                <i class='bx bxs-analyse icon'></i>
+                <span class="text nav-text">Converter</span>
+              </a>
+            </li>
+  
+            
+            <li class="nav-link">
+              <a href="whiteboard.html">
+                <i class='bx bx-chalkboard icon'></i>
+                <span class="text nav-text">Whiteboard</span>
+              </a>
+            </li>
+  
+          </ul>
+        </div>
+  
+  
+  
+          <li class="mode">
+            <div class="sun-moon">
+              <i class='bx bx-moon icon moon'></i>
+              <i class='bx bx-sun icon sun'></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+  
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+  
+        </div>
+      </div>
+  
+    </nav>
+  <section class="home">
+    <div id="gallery" class="container-fluid">  
+      <h2>Search for Photos</h2>
+      <button id="loadMoreBtn">Load More</button>
+      <form id="searchForm">
+          <input type="text" id="query" placeholder="Enter a search query">
+          <button type="submit">Search</button>
+          
+      </form>
+      <div id="photoGallery"></div>  
+    </div>
+  </section>  
+</div>
+<script>
+  const body = document.querySelector("body");
+const sidebar = body.querySelector("nav");
+const toggle = body.querySelector(".toggle");
+const searchBtn = body.querySelector(".search-box");
+const modeSwitch = body.querySelector(".toggle-switch");
+const modeText = body.querySelector(".mode-text");
+
+toggle.addEventListener("click", () => {
+  sidebar.classList.toggle("close");
+});
+
+searchBtn.addEventListener("click", () => {
+  sidebar.classList.remove("close");
+});
+
+modeSwitch.addEventListener("click", () => {
+  body.classList.toggle("dark");
+
+  if (body.classList.contains("dark")) {
+    modeText.innerText = "Light mode";
+  } else {
+    modeText.innerText = "Dark mode";
+  }
+});
+
+const searchForm = document.getElementById("searchForm");
+const queryInput = document.getElementById("query");
+const photoGallery = document.getElementById("photoGallery");
+const loadMoreBtn = document.getElementById("loadMoreBtn");
+
+let page = 1; // Initialize page number
+
+searchForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const query = queryInput.value;
+  const accessKey = "VkeQLv2ih12cRoT5AfbuG2eRjKRneERgEe37pE6ueak"; // Replace with your Unsplash access key
+  const url = `https://api.unsplash.com/search/photos?query=${query}&page=${page}&client_id=${accessKey}`;
+
+  // Clear previous search results
+  if (page === 1) {
+    photoGallery.innerHTML = "";
+  }
+
+  // Fetch photos from Unsplash API
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      data.results.forEach((photo) => {
+        const imgElement = document.createElement("img");
+        imgElement.src = photo.urls.regular;
+        imgElement.alt = photo.alt_description;
+        photoGallery.appendChild(imgElement);
+      });
+      page++; // Increment page number for the next load more request
+    })
+    .catch((error) => {
+      console.error("Error fetching photos:", error);
+    });
+});
+
+// Handle "Load More" button click
+loadMoreBtn.addEventListener("click", function () {
+  searchForm.dispatchEvent(new Event("submit"));
+});
+
+</script>
+
